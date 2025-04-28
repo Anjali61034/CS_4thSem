@@ -1,0 +1,7 @@
+Practical 11. Write a program to report behaviour of Linux kernel including kernel version, CPU
+type andCPU information.
+•
+
+uname - r                for Kernel version
+uname -m                 for cpu type
+lscpu                    for cpu information
