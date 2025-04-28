@@ -1,0 +1,5 @@
+free -b (bytes),
+ free -k (kilobytes), and 
+free -h (human-readable like MB/GB) 
+
+show the same memory info in different units.
