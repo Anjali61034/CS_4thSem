@@ -1,0 +1,101 @@
+📂 Directory Management
+
+
+mkdir <dir> → Create a new directory. (Example: mkdir Anjali)
+
+ls → List files and directories.
+
+ls -l → List with detailed permissions and sizes.
+
+ls -lrt → List in long format, sorted by modification time (oldest first).
+
+rmdir <dir> → Remove an empty directory. (Example: rmdir Anjali)
+
+📄 File Management
+
+
+cat <file> → Display file contents. (Example: cat file.txt)
+
+cp <source> <dest> → Copy a file. (Example: cp file.txt file2.txt)
+
+rm <file> → Delete a file. (Example: rm file.txt)
+
+mv <source> <dest> → Move or rename a file. (Example: mv file2.txt new_name.txt)
+
+🖥️ Information Maintenance
+
+
+wc <file> → Word, line, and byte count. (Example: wc file.txt)
+
+cal → Display the current month’s calendar.
+
+who → Show who is logged in.
+
+date → Display the current date and time.
+
+pwd → Print current working directory. (Example output: /home/anjali/Desktop)
+
+
+
+🔹 Redirection Operators 
+> : Redirect standard output to a file (overwrite).
+
+>> : Redirect standard output to a file (append).
+
+< : Take input from a file.
+
+2> : Redirect standard error to a file.
+
+&> : Redirect both output and error to the same file.
+
+`command` : Use the output of one command inside another.
+
+🔹 Process Commands
+fork() : Create a new child process.
+
+getpid() : Get the current process ID.
+
+ps : List running processes.
+
+kill -9 PID : Forcefully kill a process by ID.
+
+sleep 5 : Pause execution for 5 seconds.
+
+🔹 File Permission Commands
+chmod 755 file.txt : Change file/directory permissions.
+
+chown john file.txt : Change the file owner.
+
+chgrp developers file.txt : Change the file group.
+
+🔹 Find Command 
+find . -name "*.txt": Find all .txt files under current directory and subdirectories.
+
+🔹 Grep commands 
+grep "pattern" filename: Search for a pattern inside a file.
+
+grep -i "pattern" filename: Case-insensitive search.
+
+grep -c "pattern" filename: Count matching lines.
+
+grep -n "pattern" filename: Show matching lines with line numbers.
+
+🔹 awk Commands 
+awk -F, '{print $2}' data.csv: Print the second column from a CSV.
+
+awk -F, '$2 > 22 {print $1}' data.csv: Print first column if second column value is greater than 22.
+
+awk '{print $1}' data.txt: Print the first column of a text file.
+
+awk '/pattern/ { action }' logfile.txt: Perform action on lines matching a pattern.
+
+awk '{sum+=$2} END {print sum}' data.txt: Sum second column values.
+
+awk '{sum+=$3; count++} END {print sum/count}' data.txt: Average third column values.
+
+🔹 Comaparing files Commands 
+cmp file1.txt file2.txt: Compare two files byte-by-byte.
+
+comm file1.txt file2.txt: Compare two sorted files line-by-line.
+
+diff file1.txt file2.txt: Show line-by-line differences between two files.
